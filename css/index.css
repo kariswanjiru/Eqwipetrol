@@ -29,36 +29,7 @@ body {
     font-family: "Raleway", sans-serif;
   }
   
-  /*--------------------------------------------------------------
-  # Back to top button
-  --------------------------------------------------------------*/
-  .back-to-top {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: 15px;
-    z-index: 996;
-    background: 7C314E;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    transition: all 0.4s;
-  }
-  .back-to-top i {
-    font-size: 28px;
-    color: #fff;
-    line-height: 0;
-  }
-  .back-to-top:hover {
-    background: #fc7c1f;
-    color: #fff;
-  }
-  .back-to-top.active {
-    visibility: visible;
-    opacity: 1;
-  }
-  
+ 
   /*--------------------------------------------------------------
   # Disable AOS delay on mobile
   --------------------------------------------------------------*/
@@ -116,15 +87,15 @@ body {
     padding: 0;
     display: flex;
     list-style: none;
-    align-items: end;
-    justify-content: end;
+    align-items: right;
+    justify-content:right;
   }
   .navbar li {
     position: relative;
   }
   .navbar a, .navbar a:focus {
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: space-between;
     padding: 5px 15px 7px 15px;
     margin-left: 5px;
@@ -132,14 +103,13 @@ body {
     color: #fff;
     white-space: nowrap;
     transition: 0.3s;
-    border-radius: 50px;
   }
   .navbar a i, .navbar a:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
   }
-  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  .navbar .active, .navbar .active:focus, .navbar li:hover > a {
     background: #7C314E;
   }
   
@@ -475,11 +445,10 @@ body {
   /*--------------------------------------------------------------
   # Services
   --------------------------------------------------------------*/
-  .services .icon-box {
-    padding: 30px;
+  .services{
+    padding: 0 30px;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
     display: flex;
     background: #fff;
     box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
