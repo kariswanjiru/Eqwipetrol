@@ -15,11 +15,8 @@
 </head>
 <body>
     <!--Home-->
-    <section>
+    <section id="Header">
       <nav class="navbar fixed-top navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/favicon.ico" alt="logo"></a>
-        </div>
         <div class="navbar">
           <ul>
             <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
@@ -40,10 +37,15 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcVFRUYFxcXHCAaGxsbGyAbGhohICEaGh4bGxsdIiwkHiEpIRsaJTYmKS4wMzMzGiI5PjkyPSwyMzABCwsLEA4QHRISHjAqIioyMjIyNDIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjAyMjIyMjIyMjIyMjIyMjIyMv/AABEIAKsBJgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAgMEBgcBAAj/xABIEAACAQIEAgYGBwUHAwMFAAABAhEAAwQSITEFQQYTIlFhcTKBkaGxwRQjQlKS0fAHM2Jy4RVDU4Ky0vFzosIkY5MXNIPi8v/EABkBAAIDAQAAAAAAAAAAAAAAAAABAgMEBf/EACwRAAICAgEEAQIFBQEAAAAAAAABAhEDEiEEMUFRYQVxEyKBobEUIzIzkST/2gAMAwEAAhEDEQA/ADt0NabJftBDtngG23kTt6/fT6op/u191XzEWFdSrqGB5GqzjOjJSWw7QPuN6J8jy9XsqLQAo2x/hj3Vw2zyQe3+leNwhsjqyP3H5HnQHivEb4dltk6bAKGPwNWYsUsjpEZSUe4eVDMlQB5/0p8Vmt/j2Jbsm6wg8oU+0AUheM4j/GufirVHopVy0Qc0adQCws4hojdt6qi8dxI/vm9x+IpnBcfvZixysVY6kET5wRUJ9FNdqCM0aKbDH7tM38GcrSBsfhVWXpldG9u2faPnTj9NHIINleY9M/7arfSZfX7k90JyUWwGEJthgJ1J3/iNVdeN99v/ALv6UWwHS23bQIbTmJ1DDmSe7xpS6XL6BZIlnt4cEVyzhtKB2umNoCOque1fzpS9NcOCQbd0epT/AOVVTwzgrkh7r2FMXbyx40+uE0oDiOleGeI6wR3r+Ro5wjidvEKxtFjkgGVK7ztO+1VtDtM6cKfCo+IwDFSA2UnYiJHlIiigt1BxeCus3ZuZRp/XSNaVEgenDrgcDPPZ5gd4qWuDYc5qYtgh9Tsnz/pUhLZihIAcMO36mmUsMLj6aZU15fb2P63oxk1pZSmAO6sgUOx91lELM8yOVGcVcy6DU1AC84176TY0io4hrkn7OvMan313BvczrBE+UGiHGEhiTpv8qicMxloXFJuIBrqWHcafgVhZLt3mfcKfXFXB3esV4cQs/wCLb/Gv5022Ps7Zx3aaj2iklIOB/wCl99tD6vzpm/atXBD2+c6GPbpqPA08pU7MD6xSxbH6Ip0w4IyYCxMlX8NgB5BYHupOPw9tUHVlpzDQ1OFmo2NtwBpzFNdxMawCdseVFSlQcCIf1USiasSKrI1y2SIAkmozYdl1Ijv0okuGdzlT0ztz8dpE0V4fwGyf/uHuXXG63FKIPJYgjx1qMlZOLKlbvZv3dt7sblFJA9e1erV8PaRRCKoHhXKNSVj9eoJb6R2SitmmQCYGx0kVJXjFkx2xr7J7po2RDZD+OwFu6uW4gYe8eRrL+kNgWnvpmYWwygvBdl+0NZHjudYrWgayXppjMmJvKQrAspKtMSFEGAQeZrZ0tbO/QppuqKp0hn6RcLACSDoZBECGnxGvrocDUh+txNxiFa451OUchA0A2A0FL/sjEf4F38BrpQnFRStFMk/RHU1Dwe7/AMx+NFP7NvDezd/A35UMwyEFwQQQxkEajXupylFtUwotPAktkKo7Fxjq7AZWH3FOsad8anyqDxlbfZKAzqGeAEfxUeG0kDlTeF4hctqUEMjalWEie8dxprG4t7rBnOwyqAIVR3KOVURwtZdr/cm53HUiGuUvLXMlayoTNdwmIKhs1oOHIJkGYE6A8uWvhSktZmVe86+W59wo0yrXI+o5tWor7nS6Hofx4tt0CVxVuQTh9o5nlG+laD0e4HfTC2stotnXrCZA1fUCPBQg9Rqu8OwouXETkx18ANWPsBrb7SBQFGwED1Vgg91yS6npl08kk7KEOH4gb2H9Wvyrj4e+P7i76ga0KvU9EZ7M0YXQ5JtXvRH2SebeNebFOP7u8P8AIa0cekfJfi1OUaD2MwHETOvWA+KmlLxTvL/gP5VplJKA8h7KNAszf6UhMy3rRvypwXbf3gPPT41oRw6HdF9gpBwdv/DT8I/KjQNjGelCaBhtm5bHYfGqVdsEFoBgazGgB2k8q1npzhVJyKoAJfYQOUVmz4q5aMo2XNGYRuVmAZ/mNWR44KMgLKyI5mp1lpUH9Tsae/te794bAeiOUeHhUPDNAK92vt/XvrZ0jqWvsqHyK5NMs5psua6TigCeFsPcnKYCxmYkhROgmK9jFu2yAzkjWCGJBjePESPbTvA8UAGUuFIM5G9G54EzAPdpSOPYrMVUOCBLZVHZSeU8z31lp71Sos41+QUL7NcOZmIA0kkjl31NVvEjyoXZ9M+VTEer4xVCCWC4lesuHt3GVl2Mz4bGQa0foX0ixd65bW64dHLCSqg9lSxgqBzisrRxpO06xv4xWmdCADdslScvbKgrEDJA5n+sms2eMdXwSVl++nW0JXUmdQo1G28V6orxLEmO0fia9XM2LOfZQMAJRFDFRAJ+1AOpaARz95p/CrcUaNmlpJ5R367HXaheHwhuXFALAsIZ1I9MaCR5EbUStWjmCPq8E6AgzOUqdNdvfNVRTaM6RoXCcUrpCknL2ZbcxWe9NNL93TmPeFNXvgmDVLYYPnB2OwA/PxqidO2H0i5GshT/ANoFGR1E6307nJXwQein71v+n8xVuiqf0SP1zf8AT+Yq4EVPD/iL6iv7z+yPRTnC+A4c3VudWMzB8xk66jfWm6ldHLpZyCdAGI9tWGFBZuCWD/dj2moWP6I4S6O0h0+6xX4Ueis06QdN8XZe6ESzkR2QZgxaAzICe0BqVP5RU4KU/wDEbdAxuB2hpl2/XdVl4J0Mwty0HZTmJI5RoY7qzZulV/8Ag/Cfzoxwf9o2KtqLS2rT66SGkzryaKsePKvP7kdky+XOgGFOq5lMESIG8co12qN/9OrXK/c9i0EuftMxCRnw9vXYhmg+W9eX9qz88Mn/AMh/21U8Ep/mfJdDPLHxFtHeLcFGBu2gtwv1oIJIAygMkxHeNPWa1EVifHemLYx7bdUlvq+RuelJB0lR3e+tN6KcfbGW3uG0LQVsoh8+YxJ1CjaR7asyQUccUlzzZW8k8km5O/RYa9XK9rVAxqYdv5V+L08DUa+T4bd/9KRh2kAiCY0oAmV6q7xzpZYwji3dFzMRm7KyPbIoUf2lYLYdbMadjT/VUlFvshWXYV2qRhf2jYTIucuHyjMAhIDRrBnUTNLb9ouCkdq5AmewfVRpL0Foh9LtbkfxN8qqeH6I3MVcZEdFGriSfDTQHvqRxrplh7lxiguEST6IG503NS+jHTHC27pa51igqQDlnWR90k8qFjl6E9X3PL+yp+d5Z8Dp/ppdv9lbAyb3hp//ADWkcL4nbxFsXLRLKSRJBGo30NTaE3B2u4aR9GXN+y4/4vw/Km2/ZY/K77h+dao21Kq3+pyexaL0ZI37KrnK8Pwj/dQTj3QO7hghzh85IEKBEa/erdqqHSfELcdEBBCTPgTpHdyprqcnsThFGW8O6G3GJZ7gTuhZ+dTm6FtyvD8H/wC1XJEAHr+Vep/1E15I0igcT6MvZtm4bisAQIAIOpjmasv7MU/9TtEKx5dwFK6VH/05/mWnf2Z/v3Y7KjH3rVU+qm3q/Jvx9NGWB5H3RbsbxJbTkMpMyd1H2m5Ejur1KxGPsrq122sk6Mw7yRpPnXqVr0Ymn7KZwDEWradXeBYHWRuhBBO/KIPPan+JYnPcGQqdte1mGwBjl6MxrrJodaxlpHIe2GBXc+ky9xPeCNx3VKxaI7J1VtbdsgBmlix8QNJ86yLIkqfBXYY4hxt3tBLRnKApVB2iduyY229tVHiF/rAjSTKc9xqRB9lFcHjU61ktqyCIz2xDGQAddtY22obxhCGUFQuh2AExpJA0ny33quclKN+TpfSn/f8A0ZI6H/vG/k+Yq03cVbQw9xFJ2DMAT6jVX6IfvH/k/wDIVM43hcuIGIIzBLeXIFLP6Q1UDfQkHXad9q1dLFSjTJ/U+Mz+yDtq8r6qwYbSCD8Kn8BTI8kgDKdf839arvR64HF1xaa2C+zKVLQq9qD7P8tTMVjclq6wnsr8XQVPInC0c9PyXxWBEjUGsP6aIxv30CLrdds0mZJ842022J76uHCelWTVyXGwU6EHcmY2/Oqp0mxQuYh3UQGaY3jQVVHqXBWu5s6TBHO2n4VgU9GMT9xfxipGD6EY9j1luyGWdO2kGNxBO1XirFwfiNq3Yh3AIJOXcn/KNa1f1Mn3oy6JGW43ojxG42uGOgjR1PtJY1GTobj4B+jOQdiCp/8AKtQ4j02t2QCbbqrSFZ+wpOvo6GaXw3pfgupthsVaDBQCC0EQI51JZ5KPCRHVWZWOh+MEZ8LeBPMFIOumk91bN0R4Z9Gwdm0QQwXMwO+ZjmIPiJj1U1heNYe8VSzft3HGsK2YgaCSO6SKJZ738HsP51Q5N9ySVE2fCvT4UG4hxJ7Sh2yZZgjWT5a8q7w7irXllUBiJ1I13jbyqvdXQXzQ7xtX6uUcoQQNgQQTGx859VT7NsIoHdz5mh2PvOUhrYAzL9qeY8Kh8Y6VWsLAuwGOyBpc+MRoPEwKs7rgXkA/tVwOa1bvKuYocpEEyDt86yW6jmPqyuvJW+daZxnp9ccMtkWEUc3uB3MdyjQe+h3COkmLuBLly52OsUNCoNMyAiAs6gmrN3jSbHGOzpFD6m59x/wn8qnYZ2W2ym28mfsbz+uc1u9nF2XQ3A3ZG8gyPVT4xCwpALDXYa8tSDFSln24aEo0fNtqy5ZoVtIB0Om9PojKQSGXUawdK2HjSjrJAjMWJ0g6nnVc6Qn6sfzj4Gh9VrG6LMWD8SajfcuvQa8v0TNmADPcYE6aZjrrR5MfbMw6mN9dt/yNVHo4bTYW1bNzLcDMQAYaCxGWTyMihHH8LdsiQQFeZG/ZB1Gm/fv8KyTyuT2S7kcsXjk496dGg2eIW3VmUkhTBMR5xNSw4iZ0rMOBcSgi0JbMGcyD2TkYmTzHs99PYPj8W4EnLroTLbzOp0NL8Tjkr39mgYnEJ+7ZtXU6DcjaRFVjifDhZKBXzKZyggAjvkjffnQfguJuXLnWG4+WAM0HQdwPt28qN8VxYuMgBnKD749tOE9mClsDx8/kK7Xcuvr+Qqspxa8xvQ1oC1cZFBU/Z1117iPIa1ojFyAf6XH6gfzj4NTfQzEdWtxpUSAuusiVMAc9q90wY9Tb8XH+lqIfs84bbu2rzOT2SNjBiCT8B7KzS/2HUjx0b+5aiCNVQCdz2Bm311k16q7jONXVd1DsmV2UAWy0qDoZzD9GvVpOWVNcVbS5ORQ6zlzahgYjTbuNP4zHujAOerBWOsUAyN8mh0EjaouHtuxDPmD2pCkQQ66hTHgfjUHrjceLirB0mIjkD4H86wSim/grcSTh3uK/Z1zduV58hpuOc+NGOMuWW0xnY+O8HmPOkcMsC0YZladANCPPTzqXxxptrEGG39RFUTlybfp0teoj/wAEdD/3r/yfMUa4hxTq7oti0XOUNmlQBJIAJPPSg/Q8fWv/ACfMUW4lw64903EdQrIEZWEzBLAghgRE1u6ateTX9Rr8d36Q7wrHdaLn1bWmRyjK0TIAM6eYrmIs9ZbvqrQRbZvHsMrR64pPBMJcti4brB3d8xIEclUDc/doZicQVTEEzosaHXW4gj2Gp5GvBzZeaI+D4XbuW1a5duhmJICqWgBiASMhI1B3p+7wSwx1vXB/+Mj/AMab4emdbQbQtaOUmRJ625MQRJEjnzongcJGYGTBj0m5d0uar1VcosxzlB3F0x5GtAa3R6xHxonwviNhBHYuNmAzAgsMxCqI1MSffQvFYU5eyWU6a5yvvAPwqD1Z7AZmnPaBljIBup3gEaKeQ2qaZHuWzpJaT6rMFYA3CJXuQkb86e6PYG39Dw820P1STKg/ZHhVW6eXBbt50LzBHbYsNuQzeO9Q8N0mxFu0q2rtl1twkdWxidpIuU74H4LNw3C20uoy21U/WyQoBjrjpp5Va3cDU1m/Rjil25cum4VZrRuAZQVGrhzzPNqNY9AwLK7BgdDv56T7qqnkUO4pcI90xUOqEMykz2eRGwInQHy9dS+h+GCK+pLyMw3AB1EHv76qfHuPtsyMRaVTKkDeBsTr37U3wDpZ1du7kttBBYF4JlYHI/xDlypJPbbwRjBuQb/aD0tGHTqbUG62pPJI19bVTeC8KvX7XXfSSpuMxbMoYkgwSWJkzAqucVvNcbO5lmJJPnFWzoxxi3bwq22DyC2oiNSTpPnW2FvGnFc2SyxUMjiyv8VxFyzcNsXi8DcDKNZ0j9b0zwO67XrVoNCvcQR5stFrly1fxxlDcRkCgMYIKga9nfQH20J4X2MbbjZbqwJ2hhpNWKSf5ZLmrKradpmxWeFslsruWZT3aDN4+NHnvIsEkACsxxfTVkYdi4ucAqJJmdASeso1h+LG9hmYhgRv2ieZXXUxqOR10rFOeqssdok8ZcNcBGxkj1k1WOk5+qT/AKg+DUazStudwoBFBOlf7u3/ANQf6WqE3+Rs2dDznj9yRav3jh7eWMqAgGNdWBInfmPYagvi7tzsrc05rsoXYzJ2nx1nxqWMRcS0trITKgiBoQRIHnQzjmHdcG7MmUHIBO5OYEzz+zPrqjGtmkY+o/Nmk/l/yEOE8KupcDsFClbg3BPaRgpBnmSB4VDscFxGUgrpppmXWNQBB99ex6u121bDsqrh7ZgMw1huQI7qkWeEkopN7E6iTFx417hBrQ4LsR0VE3A4W4g1TWZ9MfnzqfZeDqI89+XtqqcT4TcQjJfuwQNGuNPPy7qm3cQ/V2SSZNtTM6naST50QxpStMWiRZ7TTPn8hVfx+Ew11oe8CQSMouRz9EgMJiOe1FeDElCT3/Kqm1o5Sn0dszXNTAietzC4DP3dIrVC+6HGKfcJdNT9XaH8f/iaT0XxWS2VzlCzzoYLeiCpjX/mk9NjpaHi3wFCuFW36y0RbYjOuuoG4k7R66w5E3PudLJx0SryzU3Urqbaa7EtBPur1CcXxEgsAx0Iy9p4iDO3jHtr1bdPk5u7Kth+F47Mp6u6oB1nmPLWRHxpeO4Ji+sGS3dK6azqDqTmjxPdWlzc7/17K6Wufo/0qnT7f8JUZk3BceADkbSYAJnwmQJ7967e4bjFssbytlGpkzEEd3q99aYpud/v/pUfitm5csXUP2kYe4xyquWJONcFuCWuSL9NFA6Iv9a/8nzFEeJPcOJKLcdVW2pyW4zGSwLCQZiBp+iN6ID61/5PmKseO4TautndAWAjNzjun2+2p9M6ia/qLS6hv4RA4DeYi4Gu9bluEK2mohSAY5iaFO9tfpAuNCsjAakEtmUrEbkRMc4qxYTAJaGW2uVZnzOmvuFVi3g1u3oYkdvluDICkQCR2iNRrUp8swdy29HsHGDtW7qAnKZVoYakny5083DsOh0zWydYV3Ud05QY91Kwl9+pQkMzgAHMrAmI1MgnaO+nkcx2tD3QT74qIDI4dZbWXeO+48ewGKG9ILYS0otqi/W2zEQD2hvFFruJC7IW/lAHxig3HMVKCFko4dlPJRmOYxyJEaUpWOis9Krtw4fNcJC5ssCWhgQCpO0nwOzA+cHh3B3a0L1u8UQrmZQTMgHQsGHltTb8FzXHt2sX1mf0n3lwgdjodouBfWRyqPwRXsM1pyVW4pV9ZXUELdU+fYYciVpwjSpAix9ATpcdm/eKSZMwSQBJO5MTNFbvCMdBAV5MwQRpt4yT5dxqr9C+J/REus8uFVARzUMdAf4suvmYq9cb6StaeyFDMLoDaT9rZfA7fiqvJBSfPglo5JMB8TtWgc9xS0nLoubx1gaeumsLh7JXMqEK0oZGU/DaQPZQDit27bxL37alVcgTM23gBclxfsGRAfbaiWI4yGa0EGjAXGnTKNYWPvSGnuymrJRdcBF/mKli9hUzA4q2LeVjrJ7/AIiomNSN+8j417AYNrhhVZo3yqWjumBpW/pOMSbI9b/tf6DuHxQS91iGI1Hj4H1TXMC84m20xNwGfWKdxnB3RS2S7pqZQgAcyTGlQMLbzOqgSSQANhrpU3BNua9GdNqkXbFWMIj5HDllA+y7ROwBAM+raiOGwN/rEt2Aer7QdTrJ1dWDSIMhvxVXej2LuWbgs3QwXkLhzG2eWV/tWzBAPI6c6t/QzHHEXnKiEQFpnv7KSBzIzN4CK5uSF8eDR3FtbZWIYQe7uoN0mXMlpRubgA9hHzo1iHJuXZ5OR7KiPh+sv4ZP/czfhBb5VGUfy0aOllrkT9X/AAS8LwLGJbVdSQTrmG2ump2qn9P8PiLKHrbgAuEMqZxn7IIlUnaSJPlWu9T/ABn2n86zL9qnAcVcuC8lsvat28pIMlTLliVmQIy60seFRd2Zpd7LCvCLdxLVwkrcFtVzKeUbEGQfZXDwm8IC4gQNBNsE+3MKewOIXq0ysGAAGhB8O+pLlC0EiY+9/WrREL+xC37y6W5QqhAfifYRQHpHZFu6qLoqooUTMDaNfI1a7WKQSARp3mPjVU6TsTiBIjRaaAMcFP1f67qDWOM3iEY27UO6AqGbOquwVXiIO40ovwpvqyPH5CoNno8qm39ZdKWmDKhIIEHMBtMSBp4VZFryJV5B/TY62h/P/wCFXHhfRy0lq22Vg+RWY5j6WUHadPKqn0ntdZfw9v7xj8TIK0vEqEtsdAFU+wA1nik5tv4N2Z/+fHH7sBplz9rsrB1HMyN/UN69UThWJOKDPZU5VOU5oUzAOxPjXq1Wjm0y4i4O+vdYO+gb4juJ8v6imjij41SXFh63xrxcd9VxsZ3kiufTvE0AVro9ZyYq8n3Qy+xgKtJJ5CfZQDAD/wBbdP3kze3LPvmrDNQxKlXyzV1stpp+0v4EMKplq8EuXXRHY2vrCFImLdxHMyRpCnTU6irqTVE4Y8X7+mjK6HyJipSMkS0ca6W2rFy216zdTrVgMerYwpnZXOnb86Zs2Bi2e9Yxea20dgFxkgAQQrggnfUVXL9rGYqxh2tW7dxUtgXFcW2kwvK4JGx9EihmAF2xeDWrbYfELqbLT1d9dyLZaTP8JLA/ZIIAq+OGMo9+SE4qTpmjcK4bctuxe81xWAAUloXx7TGgfG+J2cNxG1cv3GS0LLBgAXViS0BlAJPM+qjF3pDbGEGKAJVgMqfaLnTq/OdPVWW9MDiLrBrsG4SJVSItyXhDGxG0b9+tVLG0rHCKiqQevdJ8IXS7nAlruYAQwlmynLuBlKj/AC0I4nxjCMVyu7KWJaRJUEHMB3gnKe+RNVNcDcKghT3jxB1rxwNzTsHSkkk+C0smL43Z6oi2ZLIofSCXzM7EA76tRvjfHrLPgIuW3C5C+VwQkFNLm0HfQ91Z6uBu8rZ9kfGknht37hocU+5NSklSL4/H8Iy5WuwJYMuUkMCfAEbfGhtm7bZWe26lQwQ3HkKhaZJ05hQSeWbzoHw3AhGzX7BuIPs9YUnzKgnfxFGcRirQtm3bwb2rJId0Fwvmjc52EiRp4UqS4RDkb4jcBkiCM5ggyDqRIPMVYugOPtWje6y4qZgkZjEwXmPdVSe+rKcidWoPZWSYEd5JJ9ZopwRCVbuzR7q0YuMLT9h1L2yp/CL5xzjeGfDXlF62WNtwBmkkkEAD11l+Dvi3cR20VWBPlIo9jbJZHWIBlvZOlVe7aLqVUSTtU8Mk4SSKJpqSZaeIY+xd7S3S5BkwPQU78tpy+wHlRjon00weEDK2bIwWHUSCwzFtBrue7uqmcIwpt24e2uYk7gGRPM8xQm9wy8zMcpiTGuwkmscZJtx9GueNxjGXs0W500wrO7B27TMR2G5knu7opGF6eWLN9Lht3HAEgxGjDUrJ3jvHsrOsPaHXW1BLqSp1XLMiYIBPxopx5EyKwUAhgJ5xB08tBQ2lJRfkMeKUouS8G/cF6SYXGIXsXA8ekCMrr/Mp1Fc6SOPot3+Q1iX7Nsf1OMZZP1iMvhIKsJ9WatJ47xInD3R/A3+k1JqpUUgro3xrDWMNYS82Q3AxUlSV0cgyQNN+dGbeGvOMyXbbIxJUqVIKk6QQh5VShgLt3C4Y2sMt+2EaZnMsuSArKysNPPavdHeIHCXCUNwWp+vsXPTtTp1i6DMoJEmAY3GxrR+CpRtdyts0HAYW4obrCGJaViNBA09Ec5oB0vacWecKg901P6S8Ye0qW7EG9dBKkxktoPSuuToFHKdJ79iE6UXJxT/5fgKpUWuR+KDnC7fY8z+VTCKY4Ufqx66lNTojYBu2i/EcMB9kF9dtJPxAq3YuWR0uZmD6HIW2PLagvCrU413+5YUDzd3+S1Z89UqPLZqySuMV6QA4bgrWHz9W11esIZpE6gZdJXTSPZXqP5x3GvVIqAEtvljxNIJbn7tKGvwO2RDG7Hjduef3qYfgFkx+9Mf+7c/3UcgF3vW11dgvifzJqPjMdatqS2pgwNixHISdard7g9s4hwEL5LaOFZ2YSTcHNv4R7KAcVurbxNzOGdUZLerEsARmaCxMEkjv2o5Gq8l54QG67rGYNmtkGBATUEKNSTz1O9WAPWb4vpVhctsYey9m6jDtSMpHMMA2s89KkL+0BeaAetvktOKolkblT/Q0GaovDiPpF0Gd2/1DupCdPlPJR+P/AG1F4J0gsWr7XLlyZBAyqSBJDDTnQ+StIt/Q9SMK2T0u1lkmPtZfVtXcTwp8QMlxYiTnzdq24kqbfZBInLqTsIjc1VrvTfqwq2LiBQDIe055kiCGGkEcqb/+oN+fTs//ABXP99CbTtEidat3XZbYAVzcLLp2Uutmt3HA/g6u648bi0jjPBVts9u0GOREYTqzOCzyT3lvjQu30yuLcD5rUy7fu7kS8T9rwP4jXj0oV3e5cvsjEAZbaOFaAYnUkamrJzclSFFUO8PwivbAEwpyg67aFDtzQofXUk4Fe8+w/lST0pwnVhAzggmew3kB6gAPVXE6U4UaZnnb0DVOpPYWuAXxPkD+VKbh47m9hp3CdMsKras/4Kk4np1g4jPcE/8AtnypahsBOK4XLZuGDoOY8RUS5irYw5Hb/dlfQbfL5beO1OcX6RYe5buWwzHNpJQ6Gar5xln71w9mOe/P1GpKIbHFWLa8p28dWHyPsqdw/iZtKQADJnXyAoNcxSHJ2j2QREd7M2k+dO/Trfefwj8qvhPWLi1fnuEkptSuqVdgxc4qGklYLAgxttApjglnNeRQJknbfY0OHEEHM6/wj8qncE4xat3hcdnAAPoqCZIjwojkUU0o9/khKCdO+3wHOK2ghI2I0Kn0hpM+VE8TgGFl2FtzFsmQhP2SeQql8fx1m9de4rXIYAaiDoI2q5Yfp9hltG39bOXLoo7o+9WZQptl88u0FGuxRMJZjF4ZSw1RDO0Sp0nw2qZ0itnqht2XHPfRhp30xicZZaCJECAcsEb7a0x9JTm7t4MJA99OUNpKXoePKoQlGu57oorNjbOUEksYAGp7DT860jjdq4mHulkYDIwkggei3Oqf0e47YsXVuPnIWfRUTqCOZFFek3S3CYm3kC3s0iCwUCO7R6m+9mct/Q7MMBb6sAtkBUEwDz1IBim+K8Ne4jXWSXtLmBJGa4sEXLbAADKVkDfUzpVH4V01axbFtGbKu0oDHhOYVMuftCuEEZtxH7tef+apxlTsjXFB3hvCjfuZbpJt21UN33Ftkpatk/dLI9xu/MlQOKt9e4O4MEc9hQbCdOXtzBaDlnsLOiqnM9y1Bx/H7dy891Fdc7TGg9oBiicnJgkarwo/VL+udSWrMMN05e2gULMd41+Ndu9PrhBAXWN9vnSsWrNAwnEravcK5nYkLFtWf0Z07IIGrGiWA4kLqZ7ZJElTIIIKmCrA6gg8qzPhPTY2rXVJYUsqEBi5AnVs0BZO/M8qn9EOMXetui4VPWXC7gCBJRDK66bDSoNFro0kX2+6a9UBMVI291epESt/TLniaScVc5BvWdKl9UAZ1+NeINAAzCYspfd7nZBRVBgkSC5j3iqhxlGuXbpUFpvA6A7BUE+41e7loMdh7KjPgBO2vhS2aCjL7tuGjxO491NMIJEj3/lWlXeDi4CpSZ01AkTpIPKujo/bUQ1tXY8so8tT86jPMor5JKNmcIOydefyrzt8B8BWino/YAlrazuABA/XjUVuA2j/AHS/rzohl27IbjRQ2f4D4Cls/wAB8BV5bgFr/DTw010pgYG0I+rXTmUmp7iopjkTTd9tTrV7fC2+Sof8grlrhaNLG2pg6dkTpz1o3Cii3G1J8TXS/a9dXi5wu1ubaCf4VqN/Y1vfIvup7IVMqCPDDz+dcua5TIGnj3nuFXNOEqNkUUh+D2iIKL6jRsgopzpqTmEHz567RXMm8MCBzg/lVzTg9sQBbB86cfhNsbpb9k/CjcKKOyCfSHsP5UtrK7Zxy5HxmrovB7Y+xbny+VSkwQX7oHcANKNgooBw40OcexvypPUbwfce/wAq0IYSdiP16qW2DPhRsFGbldN/ca6LZk78+RrRlwXl8qW/DqNwozU2zHP2HwroTXf3eFaKMCTpSvoE8xPlRsFGcC0Y5+w05bw7MeyrGI2UmtFOE8R5xSUwknceyPnRsFFAXAXI/dv+E+NKXh1zT6u5+H860JMLyzg+qn0wBM9ofhP50bCMzu4R00ZXB8V8/GufR2JGjbfd8K0/6DH95/2n/dSxYHMz4xHzNOwMvXA3CNEY/wCWlJw64Z+qf8JrTzhF7qUmCU7iiwKBg+D3HWQhhl0Y7agct6tfRnB3LVxnZRGka6nshdAfKrClkDSKlWrf8o86HbAdW8h3DD2fKvV5k8vUa9SoR0IO6kgDuqQiabVwWyTA1qNkiNkFLXCzryqclsIO1qa7knVtB3T8arlL0NIghOSqR4xTb2o0Ak1Ne8NhtTagUlC+47IZwpO4pm7Zy8pY7Dv/ACA5mp2JxQWOZPojv/IDvpm22stqx3MR6h3Cp0IgHBtvOp0J09g8K4+GcDeiaNr+vfTGJfy8I0p0OyF9FbMoBDTvPId9TRgwBAmncNYKjX0jqfDwFPODv86VBZCbh4P/AAPzrrcPHjUvbXWmrmJUd59RpcjGBw5d2E+r+tNPw5O6PPWpf0gclb2TXfpAOhB9dHIA7+zU5n5V1uHJ9ldfP5UQLDy99ezDvooVgi9wyYiPLu91I/syNyPVNFi0/wDNcS2qzGkmTqT8akhA7+zttRXDho7zRXKvMj217Kvf76ABS2v4adFjyqe1tTz94rwRBsRTAhHBse6mTgHB5R7KLZxyZfaKVp3j20xA5cL3x668MKByokpTvA9YrxK/eFAAzqtdhSQu8iiZKHmPbSCqd49lAgct1diD69qfUr4Usm3yZaSLqDn7qYHQR4+oE/CnMnlSQ6H/AIP5VIU6bN7P6UAMqpHfTqp+opPa7j7K490KJYMPHKfypgSEtTsV+FcpFu4D3+sEfGvUAddgoMtp4mu2UZtSSByEwT4nu8t6j4btXjOuVQR4E8/Op7UgGSVJy5iT3Ak102D3n8RFPqIPqrlzn5UgIV9J0BbTeGaB4b700ykff/E/50s6gDwJ99RcRdZdASKAFfRgxLEP5lm5d0mlWcIh1g6c8xP9KRbuEgSZ051NbZaBjYwoGgc69x9gmkIoBnUmpC6U1iCZGp9ppDI96yDrlYnzI+FItYZQuY5gTykmB5E/qafZjB1PP50sINRHOmAzbtg8h6wB8K5cw4kx7hpT47qWzmYmgBjB2hBkA66d49dS+rEd/hTY2PnSSdDUQFpbBHaWP14GoeMtQA2kKyz5E5T8Z9VSkamcRqG8QaAFJh1nQA+8/wBKdCHbII7yBQe/dYOYJGppdnFPHpHcfOpDoI3LU7KsjYxr7KHth1JzBdyZiND3eVP3LhJGtenSPGgBC21PKPZTbjKQylg3hGlLw5kwdf8AmnB9rwI+NAE2xiRcWdmX0lOnrHhSOvPdUPCaOD5j/VUpt5/XKgQ8Lp5xB0I5H1U3kWdhr7qYLSJ/W1MrqR406ETzZ8q6iEDWD4iuH0AajWHJ3J38vhQImdTrIA8aSzgbiJ9h8qVb56n2nuFSFsKwGYT5k0AQ0BJ1y5eUb0ttP+dKes4ZNeyNqfGGSPRFADCGQNIPL+hpaWd5JI8Y9mlKNod1LRBG1MCGcJHoOU8IzL6gdvUa5UsoJ2rtID//2Q==" class="d-block w-100" alt="...">
+        <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+          <h5>Eqwipetrol</h5>
+          <p>Eqwipetro’s core business is the
+            marketing and distribution of
+            petroleum products and related
+            services to industry, transport,
+            commercial and domestic users
+            throughout Kenya</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -216,90 +218,67 @@
       <div class="section-title" data-aos="zoom-out">
         <h2>Services</h2>
         <p>What we do offer</p>
-        <p>Eqwipetro’s core business is the
-          marketing and distribution of
-          petroleum products and related
-          services to industry, transport,
-          commercial and domestic users
-          throughout Kenya</p>
+        
       </div>
-        <div class="container">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-            <div class="tab-pane">
-              <div class="row">
-                <div class="col-lg-6">
-                  <h2>How the app works</h2>
-                  <h3>The simple step process by the station owner is?</h3>
-            
-                    <ul>
-                      <li><i class="ri-check-double-line"></i> User login: The user logins to the app,
-                        looks through the list of petroleum products
-                        and chooses the one they wish to order. The
-                        app should add various filters to make sure
-                        that the choice-making process becomes
-                        easier and better. </li>
-                      <li><i class="ri-check-double-line"></i> User Confirms Order: The user confirms
-                        the order and chooses the mode of payment.
-                        The payment could be made by any medium
-                        like Bank Transfer, Credit Card, Debit card,
-                        Mobile wallet or integrated in-app wallet. 
-                        </li>
-                      <li><i class="ri-check-double-line"></i> Eqwipetrol Confirms the Order: Once
-                        the process is completed from the user’s end
-                        Eqwipetrol confirms the order and shares an
-                        estimate of how long would it take for them
-                        to deliver the product. The app can also
-                        predict the time. 
-                        </li>
-                      <li><i class="ri-check-double-line"></i> . Eqwipetrol orders the product from a
-                        vendor: The ordering process is due to a
-                        listed vendor with a competitive pricelist
-                        updated daily. </li>
-                    </ul>
-                </div>
-    
-                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                    <ul>
-                      <li><i class="ri-check-double-line"></i>Transporter Is Assigned: As the Product is
-                        being prepared (Eqwipetrol side securing
-                        the product), in the meanwhile the Transport
-                        for the order is assigned. Depending on the
-                        size of the order, if the order is less than a full
-                        truckload (10,000 liters), the system should
-                        automatically consolidate orders together
-                        with orders from other users within the
-                        locality and provide an estimated delivery
-                        time. </li>
-                      <li><i class="ri-check-double-line"></i> Transporter Collects Order: As the order
-                        is prepared, the transporter collects the
-                        respective order and sets out for delivery
-                        following a GPS route map.
-                        vii. Order Delivered: The Transporter delivers
-                        the order to the petrol station. 
-                        </li>
-                      <li><i class="ri-check-double-line"></i> Eqwipetrol Confirms the Order: Once
-                        the process is completed from the user’s end
-                        Eqwipetrol confirms the order and shares an
-                        estimate of how long would it take for them
-                        to deliver the product. The app can also
-                        predict the time. 
-                        </li>
-                      <li><i class="ri-check-double-line"></i> . With in-app call and location tracking
-                        services, the transporter should deliver the
-                        product easily and in the shortest time span.
-                        The user should also monitor the products
-                        journey to the station.
-                        ix. Once the order is delivered, to the customer the profit margin is realized through,
-                        the transport margin and the product
-                        margin.  </li>
-                    </ul>
-                </div>
-      
-              </div>
-    
+      <div class="row content" data-aos="fade-up">
+        <div class="col-lg-6">
+          <h2>How the app works</h2>
+          <h3>The simple step process by the station owner is?</h3>
+          <ul class="col-lg-6">
+            <li><strong>User login: </strong> The user logins to the app,
+              looks through the list of petroleum products
+              and chooses the one they wish to order. The
+              app should add various filters to make sure
+              that the choice-making process becomes
+              easier and better. </li>
+            <li><strong>User Confirms Order:</strong>The user confirms
+              the order and chooses the mode of payment.
+              The payment could be made by any medium
+              like Bank Transfer, Credit Card, Debit card,
+              Mobile wallet or integrated in-app wallet. 
+              </li>
+            <li><strong>Eqwipetrol Confirms the Order:</strong>Once
+              the process is completed from the user’s end
+              Eqwipetrol confirms the order and shares an
+              estimate of how long would it take for them
+              to deliver the product. The app can also
+              predict the time. 
+              </li>
+            <li><strong>Eqwipetrol orders the product from a
+              vendor:</strong>The ordering process is due to a
+              listed vendor with a competitive pricelist
+              updated daily. </li>
+          </ul>
         </div>
-              </div>
-            
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <ul class="col-lg-6">
+            <li><strong>Transporter Is Assigned:</strong> As the Product is
+              being prepared (Eqwipetrol side securing
+              the product), in the meanwhile the Transport
+              for the order is assigned. Depending on the
+              size of the order, if the order is less than a full
+              truckload (10,000 liters), the system should
+              automatically consolidate orders together
+              with orders from other users within the
+              locality and provide an estimated delivery
+              time.  </li>
+            <li><strong>Transporter Collects Order:</strong>As the order
+              is prepared, the transporter collects the
+              respective order and sets out for delivery
+              following a GPS route map.
+              vii. Order Delivered: The Transporter delivers
+              the order to the petrol station. 
+              </li>
+            <li><strong>With in-app call and location tracking </strong>services, the transporter should deliver the
+              product easily and in the shortest time span.
+              The user should also monitor the products
+              journey to the station.
+              ix. Once the order is delivered, to the customer the profit margin is realized through,
+              the transport margin and the product
+              margin. 
+              </li>
+           </ul>
+        </div>
       </div>
 
     </div>

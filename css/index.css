@@ -72,7 +72,9 @@ body {
     margin: 0;
     max-height: 40px;
   }
-  
+  .services{
+    width: 100%;
+  }
   /*--------------------------------------------------------------
   # Navigation Menu
   --------------------------------------------------------------*/
@@ -81,6 +83,7 @@ body {
   */
   .navbar {
     padding: 0;
+    max-height: fit-content;
   }
   .navbar ul {
     margin: 0;
@@ -470,7 +473,32 @@ body {
   .services .title a:hover {
     color: #7C314E;
   }
-  
+  .services .content h3 {
+    font-weight: 600;
+    font-size: 26px;
+  }
+  .services .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  .services .content ul li {
+    padding-left: 28px;
+    position: relative;
+  }
+  .services .content ul li + li {
+    margin-top: 10px;
+  }
+  .services .content ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #7C314E;
+    line-height: 1;
+  }
+  .services .content p:last-child {
+    margin-bottom: 0;
+  }
   
   
   
