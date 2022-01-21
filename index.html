@@ -4,41 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Document</title>
+    <title>Eqwipetrol</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/favicon.ico">
+    
 </head>
 <body>
     <!--Home-->
     <section>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <!--<li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+      <nav class="navbar fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/favicon.ico" alt="logo"></a>
+          
+        </div>
       </nav>
   <!--carousel-->
       
@@ -50,21 +29,21 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="..." class="d-block w-100" alt="...">
+        <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+        <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkR1TUdej5F4f2vPk-LeAMEnxUpvf5tuXBQ&usqp=CAU" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
@@ -94,9 +73,22 @@
 
       <div class="row content" data-aos="fade-up">
         <div class="col-lg-6">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+          <p>Eqwipetrol is a fuel retailing platform that
+            gives independent retailers an opportunity
+            to have a proportional advantage in the
+            market share by increasing efficiency,
+            productivity and security through the use of
+            digital technology. Eqwipetrol App just like
+            Cafu, Uber and Uber Eats is making life as
+            hassle-free as it ever could be. Eqwipetrol
+            App is also involved in the supply of
+            petroleum products to areas beyond the
+            scope of traditional fuel operators. A total of
+            over 400 independent oil dealers operating
+            in remote areas have been included in the
+            joint venture where key oil players will avail
+            fuel products to the retailers through the
+            Eqwipetrol platform. 
           </p>
           <ul>
             <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
@@ -106,11 +98,20 @@
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0">
           <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Petrol station owners
+            too can order their products from the
+            comfort of home and get immediate
+            delivery. At Eqwipetrol, we intend to
+            eliminate the hassle in the ordering,
+            payment, logistics and delivery of the
+            product by automating the process through
+            integration of the financial, requisition,
+            supplying and delivery systems into one
+            secure, user-friendly portal. With this App,
+            petroleum retailers may further expand their
+            business by availing credit from our banking
+            partners and ordering fuel from Eqwipetrol.
           </p>
-          <a href="#" class="btn-learn-more">Learn More</a>
         </div>
       </div>
 
@@ -124,25 +125,19 @@
         <li class="nav-item col-3" data-aos="zoom-in">
           <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
             <i class="ri-gps-line"></i>
-            <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
+            <h4 class="d-none d-lg-block">Our Mission</h4>
           </a>
         </li>
         <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
           <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
             <i class="ri-body-scan-line"></i>
-            <h4 class="d-none d-lg-block">Unde praesenti mara setra le</h4>
+            <h4 class="d-none d-lg-block">Our Vision</h4>
           </a>
         </li>
         <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
           <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
             <i class="ri-sun-line"></i>
-            <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
-          </a>
-        </li>
-        <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
-          <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
-            <i class="ri-store-line"></i>
-            <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
+            <h4 class="d-none d-lg-block">Our Objectivess</h4>
           </a>
         </li>
       </ul>
@@ -151,20 +146,12 @@
         <div class="tab-pane active show" id="tab-1">
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+              <h3>Our Mission</h3>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+                To Consumers: Provide quality sustainable products and superior service
+                To Employees: Create and maintain a harmonious, respectful eco-friendly work environment
+                To Business Partners: Create a fair, equal cooperative platform with mutual benefits
+                To Shareholders: Render above-average returns on investmen
               </p>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -175,75 +162,41 @@
         <div class="tab-pane" id="tab-2">
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-              <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
+              <h3>Our Vision</h3>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+                Our vision is to be the most effective in transforming the independent Oil & Gas
+                industry in East Africa by utilizing our expertise and experience in the technology,
+                  banking & retail sectors.
+
               </p>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
+             </div>
+             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+              <h3>Our Core Vaues</h3>
               <ul>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="ri-check-double-line"></i> Integrity</li>
+                <li><i class="ri-check-double-line"></i> Team Spirit</li>
+                <li><i class="ri-check-double-line"></i> Superior Quality</li>
+                <li><i class="ri-check-double-line"></i> Constant Learning</li>
+                <li><i class="ri-check-double-line"></i> Innovation</li>
+                <li><i class="ri-check-double-line"></i> Consumer Orientation</li>
+                <li><i class="ri-check-double-line"></i> Ethics</li>
               </ul>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 text-center">
-              <img src="assets/img/features-2.png" alt="" class="img-fluid"/>
-            </div>
+          </div>
           </div>
         </div>
         <div class="tab-pane" id="tab-3">
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-              <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
-              </p>
-              <ul>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-              </ul>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 text-center">
-              <img src="assets/img/features-3.png" alt="" class="img-fluid"/>
-            </div>
+              <h3>Our Objectives</h3>
+              <p>To create bring together all independent fuel
+                station owners and create digital technology
+                platform with strong Kenyan brand that
+                understands our Kenyan needs taking
+                advantage of our strength in numbers to
+                increase efficiency, productivity and security
+                through the use of digital technology. </p>
           </div>
         </div>
-        <div class="tab-pane" id="tab-4">
-          <div class="row">
-            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-              <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
-              </p>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 text-center">
-              <img src="assets/img/features-4.png" alt="" class="img-fluid"/>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -259,125 +212,89 @@
         <p>What we do offer</p>
       </div>
 
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="icon-box" data-aos="zoom-in-left">
-            <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+      <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+        <div class="tab-pane">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+              <h2>How the app works</h2>
+              <h3>The simple step process by the station owner is?</h3>
+        
+                <ul>
+                  <li><i class="ri-check-double-line"></i> User login: The user logins to the app,
+                    looks through the list of petroleum products
+                    and chooses the one they wish to order. The
+                    app should add various filters to make sure
+                    that the choice-making process becomes
+                    easier and better. </li>
+                  <li><i class="ri-check-double-line"></i> User Confirms Order: The user confirms
+                    the order and chooses the mode of payment.
+                    The payment could be made by any medium
+                    like Bank Transfer, Credit Card, Debit card,
+                    Mobile wallet or integrated in-app wallet. 
+                    </li>
+                  <li><i class="ri-check-double-line"></i> Eqwipetrol Confirms the Order: Once
+                    the process is completed from the user’s end
+                    Eqwipetrol confirms the order and shares an
+                    estimate of how long would it take for them
+                    to deliver the product. The app can also
+                    predict the time. 
+                    </li>
+                  <li><i class="ri-check-double-line"></i> . Eqwipetrol orders the product from a
+                    vendor: The ordering process is due to a
+                    listed vendor with a competitive pricelist
+                    updated daily. </li>
+                </ul>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-          <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+        <div class="tab-pane">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <ul>
+                  <li><i class="ri-check-double-line"></i>Transporter Is Assigned: As the Product is
+                    being prepared (Eqwipetrol side securing
+                    the product), in the meanwhile the Transport
+                    for the order is assigned. Depending on the
+                    size of the order, if the order is less than a full
+                    truckload (10,000 liters), the system should
+                    automatically consolidate orders together
+                    with orders from other users within the
+                    locality and provide an estimated delivery
+                    time. </li>
+                  <li><i class="ri-check-double-line"></i> Transporter Collects Order: As the order
+                    is prepared, the transporter collects the
+                    respective order and sets out for delivery
+                    following a GPS route map.
+                    vii. Order Delivered: The Transporter delivers
+                    the order to the petrol station. 
+                    </li>
+                  <li><i class="ri-check-double-line"></i> Eqwipetrol Confirms the Order: Once
+                    the process is completed from the user’s end
+                    Eqwipetrol confirms the order and shares an
+                    estimate of how long would it take for them
+                    to deliver the product. The app can also
+                    predict the time. 
+                    </li>
+                  <li><i class="ri-check-double-line"></i> . With in-app call and location tracking
+                    services, the transporter should deliver the
+                    product easily and in the shortest time span.
+                    The user should also monitor the products
+                    journey to the station.
+                    ix. Once the order is delivered, to the customer the profit margin is realized through,
+                    the transport margin and the product
+                    margin.  </li>
+                </ul>
+            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
-          <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+        
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt-5">
-          <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-5">
-          <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt-5">
-          <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
-        </div>
+  
       </div>
 
     </div>
   </section>
 
-  <!--faq-->
-  <section id="faq" class="faq">
-    <div class="container">
-
-      <div class="section-title" data-aos="zoom-out">
-        <h2>F.A.Q</h2>
-        <p>Frequently Asked Questions</p>
-      </div>
-
-      <ul class="faq-list">
-
-        <li>
-          <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-          <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-            <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-          <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-            <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-          <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-            <p>
-              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-          <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-            <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-          <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-            <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-          <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-            <p>
-              Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-            </p>
-          </div>
-        </li>
-
-      </ul>
-
-    </div>
-  </section>
+  
 
   <!--contanct-->
   <section id="contact" class="contact">
@@ -395,19 +312,20 @@
             <div class="address">
               <i class="bi bi-geo-alt"></i>
               <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Riverside Lane off Riverside Road, Nairobi
+                Nairobi,Kenya</p>
             </div>
 
             <div class="email">
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
-              <p>info@example.com</p>
+              <p>info@eqwipetrol.com</p>
             </div>
 
             <div class="phone">
               <i class="bi bi-phone"></i>
               <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
+              <p>+254 703 278 994</p>
             </div>
 
           </div>
@@ -446,9 +364,41 @@
     </div>
   </section>
 
+  <!--Footer-->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <h3>Eqwipetrol</h3>
+         <p>Hii ni yetu.</p>
+        
+        <!-- Facebook -->
+
+        <a class="social-links" href="#!" role="button"
+          ><img src="images/facebook.png" alt="" class="material-icons"></a>
+  
+        <!-- Twitter -->
+        <a class="social-links" href="#!" role="button"
+          ><img src="images/twitter.png" alt="" class="material-icons"></a>
+  
+       
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Eqwipetrol</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
         
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
-
+    <script src="js/validate.js"></script>
+    
 </body>
 </html>
