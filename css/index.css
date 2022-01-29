@@ -214,6 +214,7 @@ nav ul li a {
   position: relative;
   background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);
   padding: 0;
+  height: 100vh;
 }
 #hero .carousel-container {
   display: flex;
